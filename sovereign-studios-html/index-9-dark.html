@@ -11,8 +11,8 @@
 <link rel="stylesheet" type="text/css" href="css/slick.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 
-<link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
-<link rel="icon" href="images/favicon.svg" type="image/x-icon">
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+<link rel="icon" href="images/favicon.png" type="image/x-icon">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -22,7 +22,7 @@
 <div class="page-wrapper">
 
   <!-- Preloader -->
-  <!-- <div class="preloader"></div> -->
+  <div class="preloader"></div>
 
   <!-- Main Header-->
   <header class="main-header header-style-two style-light-theme">
@@ -820,8 +820,9 @@
                 </div>
 
                 <!--Contact Form-->
-                <form method="POST" action="https://formsubmit.co/info@sovereignstudios.co.uk" id="contact-form">
+                <form method="post" action="get" id="contact-form">
                   <div class="row">
+
                     <div class="form-group col-lg-6 col-md-6">
                       <input type="text" name="name" placeholder="Your Name" required>
                     </div>
@@ -829,10 +830,10 @@
                       <input type="email" name="email" placeholder="Email Address" required>
                     </div>
                     <div class="form-group col-lg-12">
-                      <textarea name="message" placeholder="Write a Message" required></textarea>
+                      <textarea name="textarea" placeholder="Write a Message" rows="2"></textarea>
                     </div>
                     <div class="form-group col-lg-12">
-                      <button type="submit" class="theme-btn btn-style-one bg-dark">Send</button> 
+                      <button type="submit" class="theme-btn btn-style-one bg-dark" name="submit-form"><span class="btn-title">Enquire</span></button>
                     </div>
                   </div>
                 </form>
